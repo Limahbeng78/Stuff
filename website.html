@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zechary's Website</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Zechary's website!</h1>
+  <p>This is a simple website created using HTML.I followed a tutorial (aka ctrl c ctrl v) so i hope you like it!</p>
+</body>
+</html>
+
+<header class="header">
+  <h1>Zechary's Website</h1>
+  <p>A website created by Zechary.</p>
+</header>
+<style>
+  .header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+  }
+  .header h1 {
+    font-size: 40px;
+  }
+</style>
+
+<nav class="navbar">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</nav>
+<style>
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+</style>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <p>My name is Zechary.I live in Malaysia.</p>
+  </div>
+  <div class="main">
+    <h2>Main Content</h2>
+    <p>Nothing here yet. But in the meantime here are some links!:</p>
+  </div>
+</div>
+<style>
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  .main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+  }
+</style>
+
+<footer class="footer">
+  <h2>© 2025 Zechary</h2>
+</footer>
+<style>
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+  }
+</style>
+
+<style>
+  @media screen and (max-width: 700px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+</style>
